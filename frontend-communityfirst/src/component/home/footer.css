@@ -1,0 +1,32 @@
+.navigation-item-footer{
+    margin: 0 10px;
+    color: #F8F0E5;
+    font-size: large;
+    font-weight: bold;
+}
+
+.navigation-list-footer {
+    padding-top: 50px;
+    display: flex;
+    margin-bottom: 0;
+    justify-content: center;
+}
+
+.navigation-item-footer-btn:hover{
+    text-decoration: none;
+    color: #c4ac27;
+}
+
+.navigation-item-footer-btn{
+    color: white;
+}
+footer {
+    grid-area: footer;
+    background: #F8F0E5;
+    background-size: 250px;
+    background-position: bottom;
+    background-image: url("../../assets/images/grass.png")
+}
+.footer-image{
+    width: 200px;
+}
