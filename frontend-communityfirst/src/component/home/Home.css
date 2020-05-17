@@ -20,6 +20,7 @@ footer
                          "sidebar main"
                           "footer footer";
     height: 100vh;
+    background: #F8F0E5;
 }
 
 header {
