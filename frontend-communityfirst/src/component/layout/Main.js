@@ -6,6 +6,7 @@ import Post from "../post/Post";
 import ItemPost from "../post/ItemPost";
 import MyPost from "../post/MyPost";
 import ServiceDetail from "../post/ServiceDetail";
+import ItemDetail from "../post/ItemDetail";
 
 function Main() {
     // The `path` lets us build <Route> paths that are
@@ -25,6 +26,7 @@ function Main() {
             <div className="container-fluid p-0" style={{background: "whitesmoke", minHeight: 'calc(100vh - 56px)'}}>
                 <Switch>
                     <Redirect exact from={path} to={`${url}/services`}/>
+                    
                     <Route exact path={`${path}/services`}>
                         <Post/>
                     </Route>
@@ -32,7 +34,10 @@ function Main() {
                     <Route exact path={`${path}/items`}>
                         <ItemPost/>
                     </Route>
+
                     <Route exact path={`${path}/service-details/:id`} children={<ServiceDetail/>}/>
+
+                    <Route exact path={`${path}/item-details/:id`} children={<ItemDetail/>}/>
 
                     <Route exact path={`${path}/my-posts`}>
                         <MyPost/>

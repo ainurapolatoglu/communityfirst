@@ -1,16 +1,16 @@
 import React, {useEffect, useState} from "react";
 import format from "date-fns/format";
 import {useParams} from "react-router-dom";
-import PostApi from "../../api/PostApi";
+import ItemPostApi from "../../api/ItemPostApi";
 
-function ServiceDetail() {
+function ItemDetail() {
 
     const {id} = useParams();
     const [post, setPost] = useState([]);
 
     const getPostById = async () => {
         try {
-            const response = await PostApi.getPostById(id);
+            const response = await ItemPostApi.getPostById(id);
             response.data.postedDate = format(new Date(response.data.postedDate), "MMMM dd, yyyy");
             setPost(response.data);
         } catch (e) {
@@ -35,7 +35,7 @@ function ServiceDetail() {
                                     <h2>Description</h2>
                                     <p className="lead">{post.description}</p>
                                 </div>
-                                <h2>Service Type</h2>
+                                <h2>Item Type</h2>
                                 <p className="lead">{post.assistanceTypes}</p>
                                 <hr className="my-4"></hr>
 
@@ -61,4 +61,4 @@ function ServiceDetail() {
     )
 }
 
-export default ServiceDetail;
+export default ItemDetail;

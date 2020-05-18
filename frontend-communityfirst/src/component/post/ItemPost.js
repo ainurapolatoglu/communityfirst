@@ -7,6 +7,7 @@ import ItemPostApi from "../../api/ItemPostApi";
 import { Toast, Spinner } from "react-bootstrap";
 import Community from "../../services/Community";
 import ItemCard from "../card/ItemCard";
+import {useHistory} from "react-router-dom";
 
 function ItemPost() {
 
@@ -21,6 +22,7 @@ function ItemPost() {
     const [loading, setLoading] = useState(true);
     const toggleRequested = (checked) => setRequestedChecked(checked);
     const toggleOffered = (checked) => setOfferedChecked(checked);
+    const history = useHistory();
 
     useEffect(() => {
         getPost(getFilter())
@@ -88,12 +90,14 @@ function ItemPost() {
                         <ItemCard key={item.id}
                             title={item.title}
                             description={item.description}
+                            maxDesc={130}
                             itemType={item.itemType}
                             postedDate={item.postedDate}
                             userId={item.userId}
                             email={item.email}
                             firstname={item.firstname}
                             lastname={item.lastname}
+                            onCardClick={()=> history.push("/communityfirst/se/item-details/" + item.id)}
                         />
                     )}
                 </div>

@@ -21,6 +21,10 @@ class ItemPostApi {
         return Api.put('/items', post);
     }
 
+    getPostById(postId) {
+        return Api.get('/items/' + postId);
+    }
+
 }
 
 export default new ItemPostApi();
