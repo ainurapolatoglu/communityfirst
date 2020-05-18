@@ -8,6 +8,7 @@ import Auth from "./services/Auth";
 import Main from "./component/layout/Main";
 import Location from "./component/location/Location";
 import Footer from "./component/home/footer";
+import Contactus from './component/contact/contactpage';
 
 function App() {
 
@@ -17,6 +18,9 @@ function App() {
                 <Redirect exact from="/" to="/communityfirst" />
                 <Route exact path="/communityfirst">
                     <Home />
+                </Route>
+                <Route exact path="/communityfirst/contactus">
+                    <Contactus />
                 </Route>
                 <Route path="/login" render={() =>
                     !Auth.isLoggedIn() ? (<LoginPage />) : (<Redirect to="/communityfirst/selection" />)
