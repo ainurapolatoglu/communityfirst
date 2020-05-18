@@ -61,6 +61,28 @@
     margin-right: auto;
 }
 
+.login-card-layout {
+    color: black;
+    font-size: 15px;
+    background-color: white;
+    padding: 40px;
+    width: 80%;
+    font-family: verdana;
+    border: solid grey;
+    margin-left: auto;
+    margin-right: auto;
+}
+.signup-card-layout {
+    color: black;
+    font-size: 20px;
+    background-color: white;
+    padding: 30px;
+    width: 100%;
+    font-family: verdana;
+    border: olivedrab;
+    margin-left: auto;
+    margin-right: auto;
+}
 .card-cursor:hover {
     cursor: pointer;
     background-color: whitesmoke;

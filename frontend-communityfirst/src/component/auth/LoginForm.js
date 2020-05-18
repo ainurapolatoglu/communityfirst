@@ -14,9 +14,9 @@ function LoginForm({onSubmit}) {
             <Menu />
             <aside>
                 <div >
-                    <div className="card card-layout">
+                    <div className="card login-card-layout">
                         <div className="card-body">
-                            <h4 className="card-title">Member Login</h4>
+                            <h4 className="card-title">Welcome Back!</h4>
                             <form onSubmit={handleSubmit(onSubmit)}>
                                 <div>
                                     <div className="form-group">
@@ -47,10 +47,10 @@ function LoginForm({onSubmit}) {
                                     </div>
 
                                     <div className="form-group">
-                                        <button className="btn btn-primary" type="submit">
+                                        <button className="btn btn-warning btn-lg mr-1" type="submit">
                                             Login
                                         </button>
-                                        <button className="btn btn-primary ml-1"
+                                        <button className="btn btn-secondary btn-lg"
                                                 onClick={() => history.push("/")}>Home
                                         </button>
                                     </div>
@@ -61,7 +61,7 @@ function LoginForm({onSubmit}) {
                 </div>
             </aside>
             <main>
-                <picture className="side-image-blur"><img className="side-image-login"src={require('../../assets/images/loginbg.jpg')}></img></picture>
+                <picture className="side-image"><img className="side-image-login"src={require('../../assets/images/login.png')}></img></picture>
             </main>
             <Footer />
         </div>

@@ -17,7 +17,7 @@ function RegisterForm({onSubmit}) {
             </main>
             <aside>
                 <div>
-                    <div className="card card-layout">
+                    <div className="card signup-card-layout">
                         <div className="card-header">
                             Glad to hear that you want to be a part of our community.
                         </div>
@@ -30,7 +30,7 @@ function RegisterForm({onSubmit}) {
                                             <input name="firstname"
                                                    type="text"
                                                    className="form-control form-control-lg"
-                                                   placeholder="Firstname"
+                                                   placeholder="First Name"
                                                    ref={register({required: true, minLength: 3, maxLength: 20})}/>
                                             {errors.firstname &&
                                             <span className="form-error">First name is required and size must be between 3 and 20 </span>}
@@ -41,7 +41,7 @@ function RegisterForm({onSubmit}) {
                                             <input name="lastname"
                                                    type="text"
                                                    className="form-control form-control-lg"
-                                                   placeholder="lastname"
+                                                   placeholder="Last Name"
                                                    ref={register({required: true, minLength: 3, maxLength: 20})}/>
                                             {errors.lastname &&
                                             <span className="form-error">Last name is required and size must be between 3 and 20 </span>}
@@ -52,7 +52,7 @@ function RegisterForm({onSubmit}) {
                                     <input name="email"
                                            type="email"
                                            className="form-control form-control-lg"
-                                           placeholder="Email"
+                                           placeholder="Enter your Email"
                                            ref={register({
                                                required: true,
                                                pattern: {
@@ -65,17 +65,17 @@ function RegisterForm({onSubmit}) {
                                 <div className="form-group">
                                     <input name="password"
                                            type="password"
-                                           placeholder="Enter your password"
+                                           placeholder="Choose a password"
                                            className="form-control form-control-lg"
                                            ref={register({required: true, minLength: 5, maxLength: 50})}/>
                                     {errors.password &&
                                     <span
                                         className="form-error">Password is required and size must be between 5 and 50 </span>}
                                 </div>
-                                <button type="submit" className="btn btn-primary">
-                                    Join now
-                                </button>
-                                <button className="btn btn-primary ml-1" onClick={() => history.push("/")}>Home</button>
+                                <button type="submit" className="btn btn-warning btn-lg mr-1">
+                                    Signup!
+                                </button>{    }
+                                <button className="btn btn-secondary btn-lg" onClick={() => history.push("/")}>Home</button>
                             </form>
                         </div>
                     </div>
