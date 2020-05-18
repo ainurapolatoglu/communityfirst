@@ -28,11 +28,11 @@ function Main() {
                     <Redirect exact from={path} to={`${url}/services`}/>
                     
                     <Route exact path={`${path}/services`}>
-                        <Post/>
+                        <Post postType="service"/>
                     </Route>
 
                     <Route exact path={`${path}/items`}>
-                        <ItemPost/>
+                        <Post postType="item"/>
                     </Route>
 
                     <Route exact path={`${path}/service-details/:id`} children={<ServiceDetail/>}/>
