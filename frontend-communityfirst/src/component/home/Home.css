@@ -23,7 +23,7 @@ footer
 }
 
 header {
-    background: #F8F0E5;
+    background: white;
     grid-area: hd;
     margin-bottom: 0;
 }
@@ -33,7 +33,7 @@ header {
 }
 
 aside {
-    background: #F8F0E5;
+    background: white;
     grid-area: sidebar;
 }
 
@@ -48,7 +48,7 @@ h1 {
 
 
 main {
-    background: #F8F0E5;
+    background: white;
     grid-area: main;
 }
 
@@ -62,16 +62,27 @@ main {
 }
 
 .side-image-login{
-    width: 95%;
-    height: 80%;
+    width: 80%;
+    height: auto;
     min-width: 300px;
     min-height: 300px;
+}
+
+.side-image-signup{
+    box-shadow: 0 0 20px 20px white inset;
+    /* min-width: 300px;
+    min-height: 300px; */
+    background-color: white;
+    padding: 30px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media screen and (max-width: 600px) {
     main {
         visibility: hidden;
-        background: #F8F0E5;
+        background: white;
     }
 }
 
@@ -82,7 +93,7 @@ main {
 
 footer {
     grid-area: footer;
-    background: #F8F0E5;
+    background: white;
     background-size: 250px;
     background-position: bottom;
     background-image: url("../../assets/images/grass.png")
@@ -125,7 +136,7 @@ ul {
 
 .navigation-item-footer{
     margin: 0 10px;
-    color: #F8F0E5;
+    color: white;
     font-size: large;
     font-weight: bold;
 }
