@@ -1,19 +1,25 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box;     
 }
 
 
 header,
-aside,
 main,
 footer
 {
     text-align: center;
     padding: 0 16px;
 }
+aside
+{
+    text-align: center;
+    padding: 0 16px;
+    width: auto;
+}
 .homepage {
     margin : 0;
     display: grid;
+    width: auto;
     grid-template-columns: 50% auto;
     grid-template-rows: 90px auto 100px;
     grid-template-areas: "hd hd"
@@ -72,6 +78,7 @@ main {
     main {
         visibility: hidden;
         background: #F8F0E5;
+        width: auto;
     }
 }
 
