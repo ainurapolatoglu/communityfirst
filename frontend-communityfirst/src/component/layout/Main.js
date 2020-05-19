@@ -8,6 +8,7 @@ import MyPost from "../post/MyPost";
 import Footer from "./Footer";
 import ServiceDetail from "../post/ServiceDetail";
 import ItemDetail from "../post/ItemDetail";
+import FileUpload from '../post/FileUpload';
 
 function Main() {
     // The `path` lets us build <Route> paths that are
@@ -47,6 +48,9 @@ function Main() {
 
                     <Route exact path={`${path}/my-posts`}>
                         <MyPost/>
+                    </Route>
+                    <Route exact path={`${path}/photos`}>
+                        <FileUpload />
                     </Route>
 
                 </Switch>

@@ -47,6 +47,9 @@ function Navbar({onLogout}) {
                     <li className="nav-item">
                         <NavLink to={`${url}/my-posts`} className="nav-link">My Posts</NavLink>
                     </li>
+                    <li className="nav-item">
+                        <NavLink to={`${url}/photos`} className="nav-link">Upload</NavLink>
+                    </li>
                 </ul>
                 <button className="btn btn-outline-light ml-lg-4" onClick={() => {
                     history.push('/communityfirst/selection');

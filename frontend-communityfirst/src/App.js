@@ -9,7 +9,7 @@ import Main from "./component/layout/Main";
 import Location from "./component/location/Location";
 import CoronaPage from "./component/coronaTracker/CoronaPage";
 import AboutPage from "./component/about/AboutPage";
-
+import FileUpload from './component/post/FileUpload';
 
 function App() {
 
