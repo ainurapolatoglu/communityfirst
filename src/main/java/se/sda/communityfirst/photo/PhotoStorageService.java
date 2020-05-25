@@ -21,7 +21,7 @@ public class PhotoStorageService {
     public PhotoStorageService(PhotoRepository photoRepository, ItemRepository itemRepository) {
         this.photoRepository = photoRepository;
         this.itemRepository = itemRepository;
-    }
+    }dfjkfnsdknfgsdlg
 
     public Photo storeFile(Long itemId, MultipartFile file) {
         // Normalize file name
